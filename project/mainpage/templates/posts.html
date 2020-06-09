@@ -1,0 +1,10 @@
+
+    <div >
+        {% for row in post_list %}
+        <div>
+            <a href="{% url 'detail' row.id %}"><h1>제목 : {{row.title}}</h1></a><br>
+        </div>
+        <br>
+		    {%endfor%}
+    </div>
+`
